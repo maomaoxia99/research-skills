@@ -1,0 +1,8 @@
+{
+  "name": "okx-meme-antirug",
+  "version": "1.0.0",
+  "description": "Meme 防 Rug 自动扫链定投 Skill。扫描 Solana/BSC 链上新发行 Meme 代币，通过多层防 Rug 过滤器自动筛选质量标的，每笔定投 100 USDT，翻倍时卖出 50% 收回本金，零成本持有剩余仓位。",
+  "author": {
+    "name": "maomaoxia99"
+  }
+}
