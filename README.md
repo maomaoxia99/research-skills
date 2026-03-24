@@ -11,14 +11,20 @@ A Claude Cowork Plugin with useful research and utility skills.
 
 ## Install
 
+### Install all skills
+
 ```bash
-npm install research-skills
+npx skills add maomaoxia99/research-skills
 ```
 
-Or install directly from GitHub:
+### Install a single skill
 
 ```bash
-npm install maomaoxia99/research-skills
+# 产品调研十维分析框架
+npx skills add maomaoxia99/research-skills/product-research
+
+# 深圳天气查询助手
+npx skills add maomaoxia99/research-skills/shenzhen-weather
 ```
 
 ## Project Structure
@@ -26,22 +32,35 @@ npm install maomaoxia99/research-skills
 ```
 research-skills/
 ├── .claude-plugin/
-│   └── plugin.json          # Plugin metadata
+│   └── plugin.json                        # Root plugin (all skills)
+├── product-research/
+│   ├── .claude-plugin/
+│   │   └── plugin.json                    # Standalone plugin
+│   └── skills/
+│       └── product-research/
+│           └── SKILL.md
+├── shenzhen-weather/
+│   ├── .claude-plugin/
+│   │   └── plugin.json                    # Standalone plugin
+│   └── skills/
+│       └── shenzhen-weather/
+│           └── SKILL.md
 ├── skills/
 │   ├── product-research/
-│   │   └── SKILL.md         # 产品调研十维分析框架
+│   │   └── SKILL.md
 │   └── shenzhen-weather/
-│       └── SKILL.md         # 深圳天气查询助手
+│       └── SKILL.md
 ├── package.json
 └── README.md
 ```
 
 ## How to Add a New Skill
 
-1. Create a new folder under `skills/` with your skill name
-2. Add a `SKILL.md` file with frontmatter (name, description) and instructions
-3. Update `package.json` version
-4. Publish to npm: `npm publish`
+1. Create `skills/<skill-name>/SKILL.md` (for root plugin)
+2. Create `<skill-name>/.claude-plugin/plugin.json` (standalone plugin metadata)
+3. Create `<skill-name>/skills/<skill-name>/SKILL.md` (standalone plugin skill file)
+4. Update this README with install commands
+5. Bump `package.json` version, push, and create a Release
 
 ## License
 
