@@ -1,0 +1,8 @@
+{
+  "name": "shenzhen-weather",
+  "version": "1.0.0",
+  "description": "深圳天气查询助手。查看深圳实时天气、未来预报，并给出穿衣和出行建议。",
+  "author": {
+    "name": "maomaoxia99"
+  }
+}
