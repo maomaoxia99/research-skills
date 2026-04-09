@@ -1,0 +1,8 @@
+{
+  "name": "okx-eth-swap-strategy",
+  "version": "1.0.0",
+  "description": "Adaptive ETH-USDT-SWAP perpetual trading strategy for OKX Agent Trade Kit. Detects trend long, trend short, range, or no-trade conditions, then manages entries, exits, stop-loss, take-profit, and position risk with stateful multi-round execution. Use when the user asks to analyze ETH-USDT-SWAP, run one strategy round, manage an ETH perpetual position, or decide whether to long, short, or stay flat.",
+  "author": {
+    "name": "maomaoxia99"
+  }
+}

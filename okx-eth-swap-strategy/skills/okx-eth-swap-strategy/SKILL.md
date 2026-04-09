@@ -8,8 +8,8 @@ description: >-
   rules.
 license: MIT
 metadata:
-  author: "maomaoxia99 + codex rewrite"
-  version: "2.2.0"
+  author: "maomaoxia99"
+  version: "1.0.0"
   homepage: "https://github.com/maomaoxia99/research-skills"
 ---
 
